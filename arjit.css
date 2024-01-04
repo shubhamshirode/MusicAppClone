@@ -1,0 +1,94 @@
+body{
+    color: white;
+    text-align: center;
+    background-image: url(img7.webp);
+    background-size: cover;
+
+}
+
+h1{
+    /* text-align: center; */
+    font-size: 4vi;
+    font-weight: bolder;
+    font-family:'Trebuchet MS', sans-serif;
+}
+
+.a1{
+    float: left;
+    width: 150px;
+    height: 150px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-left: 100px;
+    
+}
+aside{
+    width: 70%;
+    float: left;
+    display: inline;
+}
+
+article{
+    width: 20%;
+    float: right;
+}
+
+
+ul{
+    text-align: center;
+}
+li{
+    gap: 10px;
+    border: 1px solid white;
+    margin: 10px;
+    list-style: none;
+    font-size: 1.5vi;
+    padding: 10px 30px;
+    border-radius: 25px;
+    width: 60%;
+    font-weight: bold;
+    
+}
+
+img{
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+}
+.song{
+    font-size: 1.5vi;
+    
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid white;
+    /* margin-top: 30%; */
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+    
+}
+.art{
+    align-items: center;
+    display: flexbox;
+    margin-left: -51%;
+    
+}
+.art1{
+    
+    border: 2px solid white;
+    border-radius: 25px;
+    margin: 10%;
+    padding-bottom: 50px;
+}
+button:hover{
+    background-color: black;
+}
+
+.bottom{
+    position: sticky;
+    height: 120px ;
+    
+}
