@@ -96,9 +96,11 @@ footer{
     bottom: 0;
 }  
 
+
 #myProgressBar:hover{
     cursor: pointer;
 }
+
 
 @media(max-width:450px){
     #myProgressBar{
