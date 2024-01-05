@@ -4,8 +4,11 @@
 
 body {
     color: #CEDEBD;
-    background-image: url("img4.webp");
-    background-repeat: repeat-y;
+    background-image: url(img4.webp);
+    background-size: cover;
+    background-position:70% ;
+
+    background-repeat: no-repeat;
     text-align: center;
 }
 
@@ -85,12 +88,21 @@ article {
 }
 
 .sp2>div {
-    /* border: 1px solid white; */
     padding: 0 35px;
 
 }
 button:hover{
     background-color: rgb(0,0,0,0.4);
+}
+footer{
+    /* position: fixed; */
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+}
+h6{
+    padding: 15px;
 }
 
 @media screen and (max-width:450px) {
