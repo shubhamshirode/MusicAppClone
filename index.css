@@ -4,10 +4,19 @@
     padding: 0;
 }
 body{
-    background-image: url(background_img2.avif);
-    background-size: cover;
+    background-image: url("images0.1.jpg");
+    background-size:cover;
     background-repeat: repeat;
     color: white;
+    z-index: 1;
+}
+.endImg{
+    height: 250px;
+    width: 250px;
+    background-image: url("download1.0.jpg");
+    background-size: cover;
+    border-radius: 25px;
+    margin: auto;
 }
 nav{
     text-align: center;
@@ -76,7 +85,16 @@ h6{
     border-radius: 50%;
 }
 @media(min-width:500px){
+    
     .dropMenu{
+        display: none;
+    }
+}
+@media screen and (max-width:750px) {
+    body{
+        background-image: url("download.jpg");
+    }
+    .endImg{
         display: none;
     }
 }

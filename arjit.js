@@ -13,6 +13,7 @@ let songs=[
     {songName:"Agar Tum Saath Ho", filePath:" "},
     {songName:" ", filePath:" "}
 ]
+
 songItem.forEach((elements,i)=>{
     element.getElementsByClassName("songName")[0].innerText = songs[i].songName;
 }) 
