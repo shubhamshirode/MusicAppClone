@@ -26,11 +26,25 @@ button:hover{
 button a {
     font-size: 1rem;
 }
+.brand{
+    padding: 10px;
+    display: inline;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: auto;   
+    line-height: 0px;
+}
+.brand img{
+    width:114px;
+    height: 114px;
+    border: none;
+}
 
 a {
     text-decoration: none;
 }
-h1 a{
+.brand h1{
     color: white;
     font-size: 3.5rem;
     text-align: center;
@@ -115,5 +129,8 @@ h6{
         width: 0;
         height: 0;
     }
-
+    /* .brand{
+        display: grid;
+        line-height: 2px;
+    } */
 }
