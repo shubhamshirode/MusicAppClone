@@ -1,8 +1,6 @@
 body{
     background-image: url("img7.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: 100% 100%;
     text-align: center;
     color: white;
 }
@@ -63,15 +61,13 @@ a{
     text-decoration: none;
     color: white;
 } 
-
 .art{
     align-items: center;
     display: flexbox;
     border-radius: 25px;
     height: auto;
     width: auto;
-    background-color: rgba(255, 255, 255, 0.1);
-   
+    background-color: rgba(255, 255, 255, 0.1); 
 }
 .art1{
     margin: 10px;
@@ -81,8 +77,7 @@ a{
     padding: 10px 20px;
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.0);
-    border: 1px solid black;
-    
+    border: 1px solid black;   
 }
 button:hover{
     background-color: rgb(0, 0,0, 0.2);
@@ -97,6 +92,10 @@ footer{
 #myProgressBar:hover{
     cursor: pointer;
 }
+
+
+
+
 @media(max-width:450px){
     #myProgressBar{
         display: none;
