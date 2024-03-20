@@ -5,68 +5,103 @@
 }
 body{
     background-image: url("images0.1.jpg");
+    background-repeat: no-repeat;
     background-size:100% 100%;
     color: white;
-    z-index: 1;
 }
-.endImg{
-    height: 250px;
-    width: 250px;
-    background-image: url("download1.0.jpg");
-    background-size: cover;
-    border-radius: 25px;
-    margin: auto;
-}
+
 nav{
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
     width: 100%;
+    background-color: black;
+    padding: 1rem;
 }
 nav ul{
     display: flex;
     height: 65px;
     align-items: center;
-}
-.brand img{
-    width:44px;
-    margin-right: 5px;
-}
-.brand{
-    display: flex;
-    font-weight: bolder;
-    font-size: 1.3rem;
-    align-items: center; 
+    justify-content: center;
+    text-align: left;
+    padding: 0.5rem;
 }
 nav li {
     display: inline;
     padding: 5px 20px;
     margin: 10px;
 }
-
-a {
+nav .musicImg{
+    border: none;
+    height: 5rem;
+    width: 5rem;
+    
+}
+nav h1{
+    font-size: 3rem;  
+}
+a{
     text-decoration: none;
     color: white;
+    font-size: 1.5rem;
 }
-.a{
-    margin: auto;
-    margin-top:8%;
+.dropdown{
+    position: relative;
+}
+.btn i{
+    font-size: 2rem;
+}
+.content{
+    position: absolute;
+    display: none;
+    box-shadow: 1px 1px 10px 1px black;
+    margin-left: 12rem ;
+}
+.btn:hover ~ .content{
+    display: block;
+}
+.content:hover{
+    display: block;
+}
+.title{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 }
-.a h1{
-    font-size: 5vi;
+.title h1{
+    margin-top: 2rem;
+    font-size: 4rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
-.a h2{
-    width: 90%;
-    text-align: center;
-    font-weight:bolder;
-    font-size:3vi;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+.title h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 1rem;
+    font-size: 2.5rem;
 }
-.aone{
-    display: none;
+.smileImg{
+    height: 15rem;
+    width: 15rem;
+    background-image: url("download1.0.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+    margin: auto;
+    opacity: 0.4;
 }
+.songPlaylist{
+    display: grid;
+    width: 80%;
+    margin: auto;
+    grid-template-columns: repeat(5,1fr);
+    justify-content: center;
+    align-items: center;
 
+}
 footer{
     background-image: linear-gradient(black,black);
     position: fixed;
@@ -78,86 +113,47 @@ footer{
 h6{
     padding: 10px;
 }
-.lg1{
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
+.b1{
+    width: 15rem;
+    height: 15rem;  
+    text-align: center; 
 }
-@media(min-width:500px){
-    
-    .dropMenu{
-        display: none;
-    }
+.b1 img{
+    width: 8rem;
+    height: 8rem;
+    margin: 0;
+    padding: 0px;
+    box-shadow: 1px 1px 10px 1px white;
+    border-radius: 10%;
 }
-@media screen and (max-width:750px) {
-    body{
-        background-image: url("download.jpg");
-    }
-    .endImg{
-        display: none;
-    }
-}
-@media (max-width:500px){ 
-    .atwo{
-        display: none;
-    }
-    .aone{
-        display: block;
-        margin-top: 0px;
-        line-height: 38px;
-    }
-    .aone h1{
-        font-size: 2rem;
-    }
-    .aone h2{
-        text-align: center;
-        margin: auto;
-        font-size: 0.8rem;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1024px) {
+    .songPlaylist{
         
+        grid-template-columns: repeat(3,1fr);
     }
-
-.dropbtn{
-    background-color: rgba(0,0,0,0);
-    color: white;
-    padding: 15px;
-    outline: none;
-    border: none;
-    font-size: 1.14rem;
-    font-weight: bolder;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    
 }
-.dropdown{
-    position: relative;
-    display: inline-block;
+@media screen and (max-width:768px) {
+    
 }
-.dropdown-content{
-    display: none;
-    position: absolute;
-    width: 100%;
-    margin: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
-
-}
-.dropdown-content a{
-  text-decoration: none;
-}
-.dropdown-content label{
-    text-decoration: none;
-  }
-.dropdown-content a:hover {
-    background-color: rgba(0,0,0,0.01);
-    border-radius: 45px;
-    border: 1px solid white;
-    border-radius: 25px;
-}
-.dropdown:hover .dropdown-content {display: block;}
-.dropdown:hover .dropbtn {background-color: rgba(0,0,0,0.2);}
-    .navim{
-        margin: auto;
+@media (max-width:425px){ 
+    
+    .songPlaylist{
+        grid-template-columns: repeat(2,1fr);
     }
-    nav ul{
-        display: grid;
-    } 
 }
+
